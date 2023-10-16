@@ -23,6 +23,11 @@ function Header(props) {
             } else {
                 setHeader(false)
             }
+            if (window.scrollY > 800) {
+                setSearchActive(true)
+            } else {
+                setSearchActive(false)
+            }
         }
         window.addEventListener('scroll', handleScroll)
         return () => {
