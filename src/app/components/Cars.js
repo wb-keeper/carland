@@ -2,9 +2,9 @@
 
 const Cars = () => {
     return (
-        <div>
+        <section className="h-screen flex items-center bg-yellow-50" id="cars">
             
-        </div>
+        </section>
     );
 };
 

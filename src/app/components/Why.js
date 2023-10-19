@@ -2,7 +2,7 @@ import React from 'react';
 
 function Why(props) {
     return (
-        <div></div>
+        <section className="section flex items-center bg-blue-50" id="why"></section>
     );
 }
 

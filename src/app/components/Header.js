@@ -55,6 +55,8 @@ function Header(props) {
                           activeClass='active'>About</Link>
                     <Link className='cursor-pointer' to='why' smooth={desktopMode} spy
                           activeClass='active'>Why us</Link>
+                    <Link className='cursor-pointer' to='testimonial' smooth={desktopMode} spy
+                          activeClass='active'>Testimonials</Link>
                     <Link className='cursor-pointer' to='contact' smooth={desktopMode} spy
                           activeClass='active'>Contact</Link>
                     <Link className='xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto' to='/' smooth={desktopMode}
