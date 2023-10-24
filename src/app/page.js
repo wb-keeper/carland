@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 import Testimonial from "@/app/components/Testimonial";
 import Cta from "@/app/components/Cta";
 import Footer from "@/app/components/Footer";
@@ -11,8 +11,8 @@ import Why from "@/app/components/Why";
 // 16 57
 export default function Home() {
   return (
-    <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">main
-    <Header />
+    <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
+      <Header />
       <Hero />
       <Cars />
       <About />
@@ -23,5 +23,5 @@ export default function Home() {
       <BackToTopBtn />
       <div className="h-[4000px]"></div>
     </main>
-  )
+  );
 }
