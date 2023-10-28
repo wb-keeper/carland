@@ -64,11 +64,11 @@ const cars = [
     ],
   },
   {
-    type: "SUV",
-    name: "Honda CR-V",
-    price: 35,
-    stars: 4.7,
-    image: "images/carSlider/car03.svg",
+    type: "Convertible",
+    name: "Mazda MX-5",
+    price: 32,
+    stars: 4.9,
+    image: "images/carSlider/car02.svg",
     info: [
       {
         icon: "icons/casSlider/gearshift.svg",
