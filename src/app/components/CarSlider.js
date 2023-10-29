@@ -3,6 +3,7 @@
 import "swiper/swiper.css";
 
 import { motion } from "framer-motion";
+import { Swiper } from "swiper";
 
 const cars = [
   {
@@ -94,7 +95,11 @@ const cars = [
   },
 ];
 const CarSlider = () => {
-  return <div></div>;
+  return (
+    <div className="container mx-auto">
+      <Swiper></Swiper>
+    </div>
+  );
 };
 
 export default CarSlider;
