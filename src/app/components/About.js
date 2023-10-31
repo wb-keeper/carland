@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "/variants";
 import Image from "next/image";
-import { MdOutlineDirectionsCar } from "react-icons/md";
+import { MdOutlineDirectionsCar, MdOutlineMapsHomeWork } from "react-icons/md";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -36,7 +36,7 @@ const About = () => {
                 diverse car types, and reliable repair points ensure a seamless
                 car experience.
               </p>
-              <div>
+              <div className="flex items-center gap-x-8 mb-12">
                 <div className="flex flex-col w-[100px]">
                   <MdOutlineDirectionsCar className="text-5xl text-accent mb22" />
                   <div className="text-5xl font-black mb-2">
@@ -50,7 +50,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="flex flex-col w-[100px]">
-                  <MdOutlineDirectionsCar className="text-5xl text-accent mb22" />
+                  <MdOutlineMapsHomeWork className="text-5xl text-accent mb22" />
                   <div className="text-5xl font-black mb-2">
                     {inView ? (
                       <CountUp start={0} end={50} duration={3} delay={1} />
