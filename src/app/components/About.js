@@ -9,7 +9,7 @@ import { MdOutlineDirectionsCar, MdOutlineMapsHomeWork } from "react-icons/md";
 
 const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.7,
   });
   return (
     <section
@@ -24,7 +24,7 @@ const About = () => {
               className="rounded-[20px]"
               src={"/images/about/car01.png"}
               alt="about"
-              width={600}
+              width={610}
               height={448}
             />
           </div>
@@ -53,7 +53,7 @@ const About = () => {
                   <MdOutlineMapsHomeWork className="text-5xl text-accent mb22" />
                   <div className="text-5xl font-black mb-2">
                     {inView ? (
-                      <CountUp start={0} end={50} duration={3} delay={1} />
+                      <CountUp start={0} end={51} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
@@ -65,7 +65,7 @@ const About = () => {
                   <MdOutlineDirectionsCar className="text-5xl text-accent mb22" />
                   <div className="text-5xl font-black mb-2">
                     {inView ? (
-                      <CountUp start={0} end={50} duration={3} delay={1} />
+                      <CountUp start={0} end={51} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
