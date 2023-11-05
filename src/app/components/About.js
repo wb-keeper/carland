@@ -40,15 +40,33 @@ const About = () => {
           </motion.div>
           <div className="flex-1 flex xl:justify-center items-center">
             <div className="xl:max-w-[517px]">
-              <h2 className="h2 mb-[42px] max-w-md">
+              <motion.h2
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.6 }}
+                className="h2 mb-[42px] max-w-md"
+              >
                 Car services simplified.
-              </h2>
-              <p>
+              </motion.h2>
+              <motion.p
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.6 }}
+                className="mb-[42px] max-w-md"
+              >
                 Rent, choose, and repair with ease. Out convenient locations,
                 diverse car types, and reliable repair points ensure a seamless
                 car experience.
-              </p>
-              <div className="flex items-center gap-x-8 mb-12">
+              </motion.p>
+              <motion.div
+                variants={fadeIn("up", 0.8)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.2 }}
+                className="flex items-center gap-x-8 mb-12"
+              >
                 <div className="flex flex-col w-[100px]">
                   <MdOutlineDirectionsCar className="text-5xl text-accent mb22" />
                   <div className="text-5xl font-black mb-2">
@@ -83,10 +101,16 @@ const About = () => {
                     repair <br /> points
                   </div>
                 </div>
-                <button className="hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]">
-                  See all cars
-                </button>
-              </div>
+              </motion.div>
+              <motion.button
+                variants={fadeIn("up", 1)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.6 }}
+                className="hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
+              >
+                See all cars
+              </motion.button>
             </div>
           </div>
         </div>
