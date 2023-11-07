@@ -10,10 +10,10 @@ function Why(props) {
     <section className="section flex items-center" id="why">
       <div className="container mx-auto">
         <motion.h2
-          variants={fadeIn("up", 0.2)}
+          variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="h2 text-center"
         >
           Unmatched excellence and customer satisfaction
@@ -30,17 +30,17 @@ function Why(props) {
           exceed your expectations in every interaction.
         </motion.p>
         <motion.div
-          variants={fadeIn("up", 0.6)}
+          variants={fadeIn("up", 0.7)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="hidden md:flex justify-center mb-6 xl:mb-2"
         >
           <Image
             src={"/images/why/car.svg"}
             alt="car"
-            width={1060}
-            height={420}
+            width={1050}
+            height={410}
           />
         </motion.div>
         <motion.div

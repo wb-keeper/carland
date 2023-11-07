@@ -29,7 +29,7 @@ function TestimonialSlider(props) {
     <div>
       <Swiper>
         {testimonialData.map((person, index) => {
-          return <SwiperSlide>slide</SwiperSlide>;
+          return <SwiperSlide>slide 1</SwiperSlide>;
         })}
       </Swiper>
     </div>
