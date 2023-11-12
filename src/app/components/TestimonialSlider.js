@@ -14,15 +14,15 @@ const testimonialData = [
     message:
       "They truly exceeded my exectations and made my car rental experience a delight",
     avatar: "/images/testimonial/avatar.png",
-    name: "Jane Doe",
-    job: "Photographer & Videographer",
+    name: "Jane Does",
+    job: "Photographer and Videographer",
   },
   {
     message:
       "They truly exceeded my exectations and made my car rental experience a delight",
     avatar: "/images/testimonial/avatar.png",
     name: "Jane Doe",
-    job: "Photographer & Videographer",
+    job: "Photographer and Videographer",
   },
 ];
 function TestimonialSlider(props) {
@@ -35,7 +35,7 @@ function TestimonialSlider(props) {
             <SwiperSlide key={index}>
               <div className="flex flex-col justify-center items-center text-center">
                 <FaQuoteLeft className="text-7xl text-accent mb-6" />
-                <div className="text-2xl xl:text-4xl max-w-[874px] mb-12 font-medium">
+                <div className="text-2xl xl:text-4xl max-w-[874px] mb-13 font-medium">
                   {message}
                 </div>
                 <Image

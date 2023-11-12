@@ -13,7 +13,7 @@ function Why(props) {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.8 }}
           className="h2 text-center"
         >
           Unmatched excellence and customer satisfaction
@@ -22,7 +22,7 @@ function Why(props) {
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="max-w-[680px] text-center mx-auto mb-2"
         >
           Our dedication to providing exceptional services sets up apart from
@@ -69,7 +69,7 @@ function Why(props) {
           <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
             <MdHandshake className="text-[38px] text-accent mb-4" />
             <h3 className="h3">Prompt and flexible services</h3>
-            <p className="hidden xl:flex ">
+            <p className="hidden xl:flex">
               We prioritize your need and we go above and beyond to ensure your
               experience with us is nothing short of outstanding.
             </p>
