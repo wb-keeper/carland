@@ -10,10 +10,10 @@ function Why(props) {
     <section className="section flex items-center" id="why">
       <div className="container mx-auto">
         <motion.h2
-          variants={fadeIn("up", 0.3)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="h2 text-center"
         >
           Unmatched excellence and customer satisfaction
@@ -34,7 +34,7 @@ function Why(props) {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="hidden md:flex justify-center mb-6 xl:mb-2"
+          className="hidden md:flex justify-center mb-6 xl:mb-3"
         >
           <Image
             src={"/images/why/car.svg"}
@@ -51,7 +51,7 @@ function Why(props) {
           className="flex flex-wrap justify-center xl:grid xl:grid-cols-3 gap-4 xl:gap-y-0 xl:gap-x-[30px]"
         >
           <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
-            <MdKey className="text-[38px] text-accent mb-4" />
+            <MdKey className="text-[38px] text-accent mb-6" />
             <h3 className="h3">Rent simply and quickly</h3>
             <p className="hidden xl:flex ">
               We prioritize your need and we go above and beyond to ensure your

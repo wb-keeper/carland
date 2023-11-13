@@ -12,14 +12,14 @@ import { FaQuoteLeft } from "react-icons/fa";
 const testimonialData = [
   {
     message:
-      "They truly exceeded my exectations and made my car rental experience a delight",
+      "They truly exceeded my expectations and made my car rental experience a delight",
     avatar: "/images/testimonial/avatar.png",
     name: "Jane Does",
     job: "Photographer and Videographer",
   },
   {
     message:
-      "They truly exceeded my exectations and made my car rental experience a delight",
+      "They truly exceeded my expectations and made my car rental experience a delight",
     avatar: "/images/testimonial/avatar.png",
     name: "Jane Doe",
     job: "Photographer and Videographer",
