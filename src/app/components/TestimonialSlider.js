@@ -8,6 +8,8 @@ import { Pagination } from "swiper/modules";
 
 import { motion } from "framer-motion";
 import { FaQuoteLeft } from "react-icons/fa";
+import Image from "next/image";
+import { fadeIn } from "../../../variants";
 
 const testimonialData = [
   {
@@ -27,8 +29,21 @@ const testimonialData = [
 ];
 function TestimonialSlider(props) {
   return (
-    <div>
-      <Swiper>
+    <motion.div
+      variants={fadeIn("up", 0.4)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.6 }}
+      className="container mx-auto"
+    >
+      <Swiper
+        pagination={{
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className="h-[450px] xl:h-[400px]"
+      >
         {testimonialData.map((person, index) => {
           const { message, avatar, mane, job } = person;
           return (
@@ -38,6 +53,7 @@ function TestimonialSlider(props) {
                 <div className="text-2xl xl:text-4xl max-w-[874px] mb-13 font-medium">
                   {message}
                 </div>
+
                 <Image
                   src={avatar}
                   width={64}
@@ -52,7 +68,7 @@ function TestimonialSlider(props) {
           );
         })}
       </Swiper>
-    </div>
+    </motion.div>
   );
 }
 
