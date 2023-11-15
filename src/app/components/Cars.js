@@ -3,7 +3,7 @@ import CarSlider from "@/app/components/CarSlider";
 
 const Cars = () => {
   return (
-    <section className="h-screen flex bg-yellow-50" id="cars">
+    <section className="h-screen flex" id="cars">
       <div className="container mx-auto">
         <Brands />
         <CarSlider />

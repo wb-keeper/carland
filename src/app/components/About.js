@@ -16,11 +16,7 @@ const About = () => {
     threshold: 0.7,
   });
   return (
-    <section
-      className="section flex items-center bg-pink-50"
-      id="about"
-      ref={ref}
-    >
+    <section className="section flex items-center" id="about" ref={ref}>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:justify-between">
           <motion.div
